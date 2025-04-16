@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.png'; // Adjust the path as necessary
+import logo from '../src/assets/logo.png'; // Adjust the path as necessary
 
 import './Navbar.css';
 
