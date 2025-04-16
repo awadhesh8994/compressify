@@ -1,0 +1,241 @@
+/* Contact.css */
+
+/* Main container styles */
+.contact-page {
+  padding: 40px 0;
+  background-color: #111827;
+  min-height: 100vh;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content layout */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form-container {
+  flex: 1 1 550px;
+  background-color: #1e293b;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form styles */
+.contact-form-container h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #cbd5e1;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #1e293b;
+  color: #e5e7eb;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4b9fff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(75, 159, 255, 0.2);
+}
+
+.required {
+  color: #f56565;
+}
+
+.submit-btn {
+  background-color: #4b9fff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+}
+
+/* Form message styles */
+.form-message {
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-message.error {
+  background-color: rgba(245, 101, 101, 0.2);
+  color: #f56565;
+  border: 1px solid rgba(245, 101, 101, 0.4);
+}
+
+.form-message.success {
+  background-color: rgba(72, 187, 120, 0.2);
+  color: #48bb78;
+  border: 1px solid rgba(72, 187, 120, 0.4);
+}
+
+/* Info card styles */
+.info-card {
+  background-color: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #374151;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  color: #4b9fff;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #9ca3af;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Social connect styles */
+.social-connect {
+  background-color: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-connect h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #374151;
+  border-radius: 50%;
+  color: #4b9fff;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #4b9fff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-form-container,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-form-container {
+    padding: 20px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+}

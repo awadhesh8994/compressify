@@ -1,0 +1,159 @@
+.image-compare-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-compare-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-compare-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    user-select: none;
+    cursor: col-resize;
+  }
+  
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .compressed-wrapper {
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slider-arrow {
+    font-size: 12px;
+    color: #3498db;
+  }
+  
+  .slider-arrow.left {
+    margin-right: 4px;
+  }
+  
+  .slider-arrow.right {
+    margin-left: 4px;
+  }
+  
+  .image-info {
+    padding: 16px;
+  }
+  
+  .image-info h3 {
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .size-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .label {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .value.saved {
+    color: #27ae60;
+  }
+  
+  .download-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .image-compare-container {
+      height: 200px;
+    }
+    
+    .size-info {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .size-info > div:last-child {
+      grid-column: span 2;
+    }
+  }
