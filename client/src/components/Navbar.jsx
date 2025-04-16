@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 
 import './Navbar.css';
 
@@ -13,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <a href="/"><img src='/src/assets/compress.img.png' alt="logo" className='logo-img' /></a>
+          <a href="/"><img src={logo} alt="logo" className='logo-img' /></a>
         </div>
         
         <div className="menu-toggle" onClick={toggleMenu}>
