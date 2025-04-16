@@ -1,4 +1,4 @@
-import profile from '../src/assets/profile.jpg';
+
 import './About.css';
 
 const About = () => {
@@ -78,7 +78,7 @@ const About = () => {
           <div className="team-members">
             <div className="team-member">
               <div className="member-avatar">
-                <img src={profile} alt="Founder" />
+                <img src="/assets/my-img2.jpg" alt="Founder" />
               </div>
               <h3>Awadhesh Kumar</h3>
               <p className="member-role">Founder & Developer</p>
