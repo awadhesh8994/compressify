@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+
 
 import './Navbar.css';
 
@@ -25,11 +27,28 @@ const Navbar = () => {
         </div>
         
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <li><a href="/" className="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+  <li>
+    <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
+      About
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>
+      Services
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
+      Contact
+    </NavLink>
+  </li>
+</ul>
+
         
       </div>
     </nav>
