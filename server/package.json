@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "postinstall": "npm install --platform=linux sharp"
+    "postinstall": "npm rebuild sharp --force"
   },
   "dependencies": {
     "cors": "^2.8.5",
